@@ -15,7 +15,7 @@ namespace DataAcess.Repositories
 
         internal IUnitOfWork Unit;
 
-        public BaseRepository(IUnitOfWork unit, DbContext context)
+        public BaseRepository(IUnitOfWork unit)
         {
             this.Unit = unit;
             this.context = unit.Context;
